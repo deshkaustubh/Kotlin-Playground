@@ -13,5 +13,7 @@ fun printPattern(lines: Int, char1: Char, char2: Char) {
     }
 }
 fun main() {
+
     PatternLinesAndTwoCharsBasedMiniApp("P3", ::printPattern)
+
 }
