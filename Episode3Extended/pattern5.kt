@@ -2,6 +2,7 @@ package Episode3Extended
 
 import com.faangx.ktp.patterns.single.PatternLinesAndTwoCharsBasedMiniApp
 
+
 fun printPattern(lines: Int, char1: Char, char2: Char) {
     // Upper part of the pattern
     repeat(lines / 2) { i ->
@@ -16,7 +17,6 @@ fun printPattern(lines: Int, char1: Char, char2: Char) {
         }
         println()
     }
-
     // Middle part of the pattern
     repeat(lines) { print(char1) }
     println()
@@ -33,9 +33,10 @@ fun printPattern(lines: Int, char1: Char, char2: Char) {
         }
         println()
     }
-
 }
+
 
 fun main() {
     PatternLinesAndTwoCharsBasedMiniApp("P5", ::printPattern)
+
 }
