@@ -1,3 +1,3 @@
 # Kotlin-Playground
 
-Kotlin mini apps.
+Kotlin mini apps playground.
