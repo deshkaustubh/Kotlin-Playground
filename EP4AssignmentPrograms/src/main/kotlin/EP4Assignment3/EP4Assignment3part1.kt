@@ -7,7 +7,7 @@ package EP4Assignment3
  */
 
 fun main(){
-    println(checkPerfect(28))
+    printPerfectNumbersUpTo(100)
 }
 
 fun checkPerfect(number: Int): Boolean{
@@ -20,4 +20,12 @@ fun checkPerfect(number: Int): Boolean{
     //if (sum == number) return true else return false
     //->Concise Approach
     return sum == number
+}
+
+fun printPerfectNumbersUpTo(upTo: Int) {
+    for (i in 1..upTo) {
+        if (checkPerfect(i)) {
+            println("$i -> perfect number")
+        }
+    }
 }

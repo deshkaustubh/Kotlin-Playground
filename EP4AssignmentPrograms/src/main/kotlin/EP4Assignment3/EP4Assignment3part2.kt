@@ -7,7 +7,7 @@ digits. For example, 18 is a Harshad number because (1 + 8 = 9) and (18 / 9 = 2)
  */
 
 fun main(){
-    println(checkHarshad(18))
+    printHarshadNumbersUpTo(100)
 }
 
 fun checkHarshad(num: Int): Boolean{ // Here interestingly I took help of print reverse number program
@@ -21,4 +21,12 @@ fun checkHarshad(num: Int): Boolean{ // Here interestingly I took help of print 
     //if (num % sum != 0) return false else return true
     //concise approach ->
     return num % sum == 0
+}
+
+fun printHarshadNumbersUpTo(upTo: Int) {
+    for (i in 1..upTo) {
+        if (checkHarshad(i)) {
+            println("$i -> Harshad number")
+        }
+    }
 }

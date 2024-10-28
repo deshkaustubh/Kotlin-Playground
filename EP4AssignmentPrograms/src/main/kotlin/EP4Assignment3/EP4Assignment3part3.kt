@@ -8,7 +8,7 @@ same digits as the number itself. For example, 25 is an automorphic number becau
  */
 
 fun main(){
-    println(checkAutomorphic(376))
+    printAutomorphicNumbersUpTo(100)
 }
 
 fun checkAutomorphic(num: Int): Boolean { // Here interestingly I took help of print reverse number program
@@ -23,4 +23,12 @@ fun checkAutomorphic(num: Int): Boolean { // Here interestingly I took help of p
     var resultVariable = (squareofNumber % (Math.pow(10.0, digit.toDouble()))).toInt()
 
     return resultVariable == num
+}
+
+fun printAutomorphicNumbersUpTo(upTo: Int) {
+    for (i in 1..upTo) {
+        if (checkAutomorphic(i)) {
+            println("$i -> Automorphic number")
+        }
+    }
 }
