@@ -30,7 +30,7 @@ fun pattern3(lines: Int) {
         repeat( 2 * (ulta - it - 1) ){ // Updated this spaces corrected this * pending
             print(" ")
         }
-        repeat(it + 2){
+        repeat(it + 2){// Actually no changes reequired hare changes were needed only in spaces so program is complete
             print("*")
         }
         println()
