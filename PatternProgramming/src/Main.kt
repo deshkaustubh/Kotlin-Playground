@@ -1,36 +1,36 @@
 /*
-Question 16 of pdf
-    *****
-   ****
-  ***
- **
-*
- **
-  ***
-   ****
-    *****
+Question 15 of pdf
+*****
+  ****
+    ***
+      **
+        *
+      **
+    ***
+  ****
+*****
  */
 
 fun main() {
-    pattern4(5)
+    pattern3(5)
 }
 
-fun pattern4(lines: Int) {
-    repeat(lines) {
-        repeat(lines - (it + 1)) {
+fun pattern3(lines: Int) {
+    repeat(lines){
+        repeat(it * 2){
             print(" ")
         }
-        repeat(lines - it) {
+        repeat(lines - it ){
             print("*")
         }
         println()
     }
-    val ulta : Int = lines -1
-    repeat(ulta) {
-        repeat(it + 1) {
+    val ulta = lines -1
+    repeat(ulta){
+        repeat(it + 1 ){
             print(" ")
         }
-        repeat(it + 2) {
+        repeat(it + 2){
             print("*")
         }
         println()
