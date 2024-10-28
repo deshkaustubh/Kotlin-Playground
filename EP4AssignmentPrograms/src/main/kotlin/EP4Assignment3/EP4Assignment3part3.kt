@@ -8,17 +8,19 @@ same digits as the number itself. For example, 25 is an automorphic number becau
  */
 
 fun main(){
-    println(checkAutomorphic(5))
+    println(checkAutomorphic(376))
 }
 
-fun checkAutomorphic(num: Int): Boolean{ // Here interestingly I took help of print reverse number program
-    var number = num
-    //while(number != 0){
-        val numend = number % 10
-    //}
+fun checkAutomorphic(num: Int): Boolean { // Here interestingly I took help of print reverse number program
     var squareofNumber = num * num
-    //while(squareofNumber != 0){
-        val squarenumend = squareofNumber % 10
-    //}
-    if (numend == squarenumend) return true else return false
+    var digit = 0
+        var number = num
+        while (number != 0) {
+            number = number / 10
+            digit = digit + 1
+        }
+
+    var resultVariable = (squareofNumber % (Math.pow(10.0, digit.toDouble()))).toInt()
+
+    return resultVariable == num
 }
