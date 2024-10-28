@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/EP4AssignmentPrograms.iml" filepath="$PROJECT_DIR$/EP4AssignmentPrograms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EP4AssignmentPrograms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EP4AssignmentPrograms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EP4AssignmentPrograms.test.iml" filepath="$PROJECT_DIR$/.idea/modules/EP4AssignmentPrograms.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin-Playground.iml" filepath="$PROJECT_DIR$/.idea/Kotlin-Playground.iml" />
       <module fileurl="file://$PROJECT_DIR$/PatternProgramming/PatternProgramming.iml" filepath="$PROJECT_DIR$/PatternProgramming/PatternProgramming.iml" />
     </modules>

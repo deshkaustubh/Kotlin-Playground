@@ -1,4 +1,3 @@
-import com.faangx.ktp.patterns.single.PatternLinesAndCharBasedMiniApp
 
 fun printPattern(lines: Int, char: Char) {
     repeat(lines) {

@@ -17,5 +17,7 @@ fun checkPerfect(number: Int): Boolean{
             sum = sum + i
         }
     }
-    if (sum == number) return true else return false
+    //if (sum == number) return true else return false
+    //->Concise Approach
+    return sum == number
 }

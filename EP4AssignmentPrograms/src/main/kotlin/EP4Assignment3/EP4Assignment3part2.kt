@@ -18,5 +18,7 @@ fun checkHarshad(num: Int): Boolean{ // Here interestingly I took help of print 
         sum = sum + digit
         number = number / 10
     }
-    if (num % sum != 0) return false else return true
+    //if (num % sum != 0) return false else return true
+    //concise approach ->
+    return num % sum == 0
 }
