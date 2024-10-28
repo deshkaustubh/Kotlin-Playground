@@ -25,9 +25,9 @@ fun pattern3(lines: Int) {
         }
         println()
     }
-    ulta = lines -1
+    val ulta = lines -1
     repeat(ulta){
-        repeat(it + 1 ){
+        repeat( 2 * (ulta - it - 1) ){ // Updated this spaces corrected this * pending
             print(" ")
         }
         repeat(it + 2){
