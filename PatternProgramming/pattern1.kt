@@ -16,4 +16,5 @@ fun pattern1(lines: Int) {
         repeat(i){print(" ")}
         for(j in lines downTo  i + 1){ print("*") }
         println()
-    }}
+    }
+}
