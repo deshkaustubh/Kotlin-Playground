@@ -17,8 +17,7 @@ fun pattern2(lines: Int) {
             print(" ")
         }
         repeat(2 * it + 1 ){j->
-            if(j %2 == 0){print("*")}
-            else print("!")
+            print(if(j %2 == 0) "*" else "!") // This was new to see so used this format
         }
         println()
     }
