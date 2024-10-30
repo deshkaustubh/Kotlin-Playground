@@ -46,7 +46,7 @@ fun pattern7(lines: Int){
 
 fun patter7Final(lines: Int){
     if (lines / 2 == 0 || lines == 1){
-        print("This pattern works only for odd number of lines starting from 3")
+        print("NOTE: This pattern works only for odd number of lines starting from 3")
     }
     else {
         repeat(lines) {
