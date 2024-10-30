@@ -1,34 +1,50 @@
 /*
-Question 19 of pdf
-   *
-  ***
- *****
-*******
- *****
-  ***
-   *
+Question 19 of pdf NOTE : This pattern works only for odd number of lines starting from 3
+    *
+   ***
+  *****
+ *******
+  *****
+   ***
+    *
  */
 
-fun main() {
-    pattern5(7)
+fun main(){
+    patter5Final(7)
 }
 
-fun pattern5(lines: Int) {
-    repeat(lines){
-        repeat(lines - it - 1 ){print(" ")}
-        repeat(2 * it + 1) {
+fun pattern5(lines: Int){
+    val newVariable = (lines + 1) / 2 // alias ( lines / 2 ) + 1
+    repeat(newVariable){
+        repeat(newVariable - it){
+            print(" ")
+        }
+        repeat(2 * it + 1){
+            print("*")
+        }
+        repeat(newVariable - it){
+            print(" ")
+        }
+        println()
+    }
+    // Reverse Pattern
+    val revVar = newVariable - 1
+    repeat(revVar){
+        repeat(it + 2){
+            print(" ")
+        }
+        repeat(2 * (revVar - (it + 1)) + 1){
             print("*")
         }
         println()
     }
-    val reverse = lines - 1
-    repeat(reverse){
-        repeat(it + 1){
-            print(" ")
-        }
-        repeat(reverse + 2 - (2 * it)){
-            print("*")
-        }
-        println()
-    }// NOTE: I have created this program, This also works properly but also I have identified a issue
+}
+
+fun patter5Final(lines: Int){
+    if (lines / 2 == 0 || lines == 1){
+        print("This pattern works only for odd number of lines starting from 3")
+    }
+    else {
+        pattern5(lines)
+    }
 }
