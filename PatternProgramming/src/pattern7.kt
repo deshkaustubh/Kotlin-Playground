@@ -1,5 +1,5 @@
 /*
-Qsn 19 of pdf
+Qsn 19 of pdf NOTE: This pattern only works for odd number of lines
 *******
 *** ***
 **   **
@@ -11,11 +11,11 @@ Qsn 19 of pdf
 
 
 fun main(){
-    patter7Final(7)
+    patter7Final(55)
 }
 
 fun pattern7(lines: Int){
-    var newVariable = lines / 2
+    val newVariable = lines / 2
     repeat(newVariable){
         repeat(newVariable - it){
             print("*")
@@ -29,11 +29,12 @@ fun pattern7(lines: Int){
         println()
     }
     // Reverse Pattern
-    repeat(newVariable -1){
+    val revVar = newVariable - 1
+    repeat(revVar){
         repeat(it + 2){
             print("*")
         }
-        repeat(newVariable - (2 * it)){
+        repeat(2 * (revVar - (it + 1)) + 1){
             print(" ")
         }
         repeat(it + 2){
@@ -44,12 +45,17 @@ fun pattern7(lines: Int){
 }
 
 fun patter7Final(lines: Int){
-    repeat(lines){
-        print("*")
+    if (lines / 2 == 0 || lines == 1){
+        print("This pattern works only for odd number of lines starting from 3")
     }
-    println()
-    pattern7(lines)
-    repeat(lines){
-        print("*")
+    else {
+        repeat(lines) {
+            print("*")
+        }
+        println()
+        pattern7(lines)
+        repeat(lines) {
+            print("*")
+        }
     }
 }

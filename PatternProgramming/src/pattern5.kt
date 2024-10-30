@@ -10,7 +10,7 @@ Question 19 of pdf
  */
 
 fun main() {
-    pattern5(4)
+    pattern5(7)
 }
 
 fun pattern5(lines: Int) {

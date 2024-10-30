@@ -17,7 +17,7 @@ fun pattern8(lines: Int) {
             print("   ") // 3 spaces
         }
         repeat(2 * it + 1 ){j->
-            var digit = it * it + 1 + j
+            val digit = it * it + 1 + j
             if(digit / 10 == 0){
                 print(" $digit ") // 1 space in back and front each
             }
