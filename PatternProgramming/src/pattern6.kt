@@ -1,11 +1,9 @@
 /*
 Question 19 of pdf
    *
-  *  *
- *    *
-*      *
- *    *
-  *  *
+  * *
+ *   *
+  * *
    *
  */
 
@@ -17,7 +15,7 @@ Note that this pattern supports only odd number of lines starting from 3.
  */
 
 fun main(){
-    pattern6Final(51)
+    pattern6Final(5)
 }
 
 fun pattern6(n : Int) {
