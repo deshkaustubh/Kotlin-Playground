@@ -4,7 +4,7 @@ fun main(){
     printAutomorphicNumbersUpTo(100)
 }
 
-fun checkAutomorphic(num: Int): Boolean { // Here interestingly I took help of print reverse number program
+fun checkAutomorphic(num: Int): Boolean {
     var powerDigit = digitChecker(num)
     var squareofNumber = num * num
     var divisor = 1

@@ -3,20 +3,26 @@
 Episode 4 Extended KTP course Program trying in playground
  */
 
-fun getDigitsPowerSum(num: Int): Int {
+fun findPattern(num: Int){
     var number = num
-    var result = 0
-    var powercount = 1
+    var digit = noOfDigits(num)
+    var power = 1
+    var result = 1
+    var output = 0
 
-    while (number != 0) {
-        val digit = number % 10
-        result += Math.pow(digit.toDouble(), powercount.toDouble()).toInt()
-        number /= 10
-        powercount = powercount + 1
-    }
-    return result
 }
 
+fun noOfDigits(num: Int): Int{
+    var digit = 0
+    var number = num
+    while (number != 0){
+        number = number / 10
+        digit = digit + 1
+    }
+    return digit
+}
+
+
 fun main() {
-    println(getDigitsPowerSum(123))
+    findPattern(5)
 }
