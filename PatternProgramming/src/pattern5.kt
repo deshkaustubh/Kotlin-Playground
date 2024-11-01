@@ -1,12 +1,12 @@
 /*
 Question 19 of pdf NOTE : This pattern works only for odd number of lines starting from 3
-    *
-   ***
-  *****
- *******
-  *****
-   ***
-    *
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
  */
 
 fun main(){
@@ -14,23 +14,20 @@ fun main(){
 }
 
 fun pattern5(lines: Int){
-    val newVariable = (lines + 1) / 2 // alias ( lines / 2 ) + 1
-    repeat(newVariable){
-        repeat(newVariable - it){
+    val halfLine = (lines + 1) / 2 // alias ( lines / 2 ) + 1
+    repeat(halfLine){
+        repeat(halfLine - it - 1){
             print(" ")
         }
         repeat(2 * it + 1){
             print("*")
         }
-        repeat(newVariable - it){
-            print(" ")
-        }
         println()
     }
     // Reverse Pattern
-    val revVar = newVariable - 1
+    val revVar = halfLine - 1
     repeat(revVar){
-        repeat(it + 2){
+        repeat(it + 1){
             print(" ")
         }
         repeat(2 * (revVar - (it + 1)) + 1){
