@@ -25,7 +25,6 @@ fun pattern5(lines: Int){
         println()
     }
     // Reverse Pattern
-    val revVar = halfLine - 1
     repeat(halfLine - 1){
         repeat(it + 1){
             print(" ")
