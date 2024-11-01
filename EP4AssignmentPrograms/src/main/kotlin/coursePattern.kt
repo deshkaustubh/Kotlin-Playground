@@ -1,28 +1,28 @@
-
-/*
-Episode 4 Extended KTP course Program trying in playground
- */
-
-fun findPattern(num: Int){
+fun getDigitsPowerSum(num: Int): Int {
     var number = num
-    var digit = noOfDigits(num)
-    var power = 1
-    var result = 1
-    var output = 0
+    var result = 0
+    var powercount = 1
 
-}
-
-fun noOfDigits(num: Int): Int{
-    var digit = 0
-    var number = num
-    while (number != 0){
-        number = number / 10
-        digit = digit + 1
+    while (number != 0) {
+        val digit = number % 10
+        result += power(digit, powercount)
+        number /= 10
+        powercount = powercount + 1
     }
-    return digit
+    return result
 }
-
 
 fun main() {
-    findPattern(5)
+    println(getDigitsPowerSum(123))
 }
+
+fun power(base: Int, exponent : Int): Int{
+    var result = 1
+    repeat(exponent){
+        result *= base
+    }
+    return result
+}
+// Actually I had messed up there was no need of calculating no of digits and because of
+// wrong direction it was taking lots of time this was simple i overestimated it.
+

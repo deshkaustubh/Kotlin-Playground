@@ -13,7 +13,7 @@ fun main() {
 
 fun pattern8(lines: Int) {
     repeat(lines){
-        repeat(lines - it){
+        repeat(lines - it -1){
             print("   ") // 3 spaces
         }
         repeat(2 * it + 1 ){j->
@@ -22,7 +22,7 @@ fun pattern8(lines: Int) {
                 print(" $digit ") // 1 space in back and front each
             }
             else{
-                print("$digit ") // 1 space in end because it is 2 digit
+                print(" $digit") // 1 space in end because it is 2 digit
             }
         }
         println()
