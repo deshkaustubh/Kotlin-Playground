@@ -15,25 +15,25 @@ Note that this pattern supports only odd number of lines starting from 3.
  */
 
 fun main(){
-    pattern6Final(5)
+    pattern6Result(3)
 }
 
 fun pattern6(n : Int) {
     val lines = n - 2
-    val newVariable = (lines + 1) / 2 // alias ( lines / 2 ) + 1
-    repeat(newVariable){
-        repeat(newVariable - it){
+    val halfLine = (lines + 1) / 2 // alias ( lines / 2 ) + 1
+    repeat(halfLine){
+        repeat(halfLine - it - 1){
             print(" ")
         }
         repeat(2 * it + 1){j ->
             if( j == 0){
-                print("* ")
+                print(" * ")
             }
             else {
                 print(" ")
             }
         }
-        repeat(newVariable - it){ f->
+        repeat(halfLine - it){ f->
             if( f == 0 ){
                 print("*")
             }
@@ -44,14 +44,13 @@ fun pattern6(n : Int) {
         println()
     }
     // Reverse Pattern
-    val revVar = newVariable - 1
-    repeat(revVar){
-        repeat(it + 2){
+    repeat(halfLine - 1){
+        repeat(it + 1){
             print(" ")
         }
-        repeat(2 * (revVar - (it + 1)) + 1){j->
+        repeat(2 * (halfLine - 1 - (it + 1)) + 1){ j->
             if(j== 0){
-                print("* ")
+                print(" * ")
             }else {
                 print(" ")
             }
@@ -68,7 +67,7 @@ fun pattern6(n : Int) {
     }
 }
 
-fun pattern6Final(lines: Int){
+fun pattern6Result (lines: Int){
     if (lines / 2 == 0 || lines == 1){
         print("NOTE: This pattern works only for odd number of lines starting from 3")
     }
