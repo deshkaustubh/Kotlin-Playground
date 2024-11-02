@@ -11,7 +11,7 @@ ALTERNATE SOLUTION
  */
 
 fun main() {
-    pattern7Alternate(3)
+    pattern7Alternate(17)
 }
 
 fun pattern7Alternate(lines: Int) {
