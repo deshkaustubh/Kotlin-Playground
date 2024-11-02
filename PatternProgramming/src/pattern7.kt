@@ -11,7 +11,7 @@ Qsn 19 of pdf NOTE: This pattern only works for odd number of lines
 
 
 fun main(){
-    patter7Final(3)
+    patter7Result(3)
 }
 
 fun pattern7(lines: Int){
@@ -44,7 +44,7 @@ fun pattern7(lines: Int){
     }
 }
 
-fun patter7Final(lines: Int){
+fun patter7Result(lines: Int){
     if (lines / 2 == 0 || lines == 1){
         print("NOTE: This pattern works only for odd number of lines starting from 3")
     }
