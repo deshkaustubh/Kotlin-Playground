@@ -19,10 +19,10 @@ fun pattern8(lines: Int) {
         repeat(2 * it + 1 ){j->
             val digit = it * it + 1 + j
             if(digit / 10 == 0){
-                print(" $digit ") // 1 space in back and front each
+                print("$digit  ") // 2 spaces after the digit to left align
             }
             else{
-                print(" $digit") // 1 space in end because it is 2 digit
+                print("$digit ") // 1 space in end because it is 2 digit and to remove the extra space
             }
         }
         println()
