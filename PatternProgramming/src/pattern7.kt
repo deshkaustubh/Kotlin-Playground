@@ -11,25 +11,25 @@ Qsn 19 of pdf NOTE: This pattern only works for odd number of lines
 
 
 fun main(){
-    patter7Final(55)
+    patter7Final(3)
 }
 
 fun pattern7(lines: Int){
-    val newVariable = lines / 2
-    repeat(newVariable){
-        repeat(newVariable - it){
+    val halfLine = lines / 2
+    repeat(halfLine){
+        repeat(halfLine - it){
             print("*")
         }
         repeat(2 * it + 1){
             print(" ")
         }
-        repeat(newVariable - it){
+        repeat(halfLine - it){
             print("*")
         }
         println()
     }
     // Reverse Pattern
-    val revVar = newVariable - 1
+    val revVar = halfLine - 1
     repeat(revVar){
         repeat(it + 2){
             print("*")
