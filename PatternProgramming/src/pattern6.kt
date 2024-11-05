@@ -7,13 +7,6 @@ Question 19 of pdf
    *
  */
 
-/*
-Notice that the * in first and last line is not in center.
-
-Also, you are interpreting lines wrongly. When lines = 7, pattern should contain exactly 7 lines.
-Note that this pattern supports only odd number of lines starting from 3.
- */
-
 fun main(){
     pattern6Result(3)
 }
